@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/app/%28movies%29/movies/%5Bid%5D/page.tsx"],"sourcesContent":["export default async function MovieDetail({ params } : { params: { id: string } }) {\n  const { id } = await params;\n  return <h1>Movie {id}</h1>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,eAAe,YAAY,EAAE,MAAM,EAA+B;IAC/E,MAAM,EAAE,EAAE,EAAE,GAAG,MAAM;IACrB,qBAAO,8OAAC;;YAAG;YAAO;;;;;;;AACpB"}}]
+}

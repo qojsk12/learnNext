@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/app/%28movies%29/movies/%5Bid%5D/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return <h2>Loading a movie:id</h2>;\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBAAO,8OAAC;kBAAG;;;;;;AACb"}}]
+}
