@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/learnNextjs/app/%28home%29/page.tsx"],"sourcesContent":["export const metadata = {\r\n  title: \"Home\",\r\n};\r\n\r\nconst URL = \"https://nomad-movies.nomadcoders.workers.dev/movies\";\r\n\r\nasync function getMovies() {\r\n  await new Promise((resolve) => setTimeout(resolve, 1000));\r\n  return fetch(URL).then((response) => response.json());\r\n}\r\n\r\nexport default async function HomePage() {\r\n  const movies = await getMovies();\r\n  return <div>{JSON.stringify(movies)}</div>;\r\n}\r\n"],"names":[],"mappings":";;;;;;;;AAAO,MAAM,WAAW;IACtB,OAAO;AACT;AAEA,MAAM,MAAM;AAEZ,eAAe;IACb,MAAM,IAAI,QAAQ,CAAC,UAAY,WAAW,SAAS;IACnD,OAAO,MAAM,KAAK,IAAI,CAAC,CAAC,WAAa,SAAS,IAAI;AACpD;AAEe,eAAe;IAC5B,MAAM,SAAS,MAAM;IACrB,qBAAO,8OAAC;kBAAK,KAAK,SAAS,CAAC;;;;;;AAC9B"}}]
+}

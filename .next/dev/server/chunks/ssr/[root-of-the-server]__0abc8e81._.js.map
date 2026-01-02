@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/learnNextjs/components/navigation.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport Link from \"next/link\";\r\nimport { usePathname } from \"next/navigation\";\r\nimport { useState } from \"react\";\r\n\r\nexport default function Navigation() {\r\n  const path = usePathname();\r\n  return (\r\n    <nav>\r\n      <ul>\r\n        <li>\r\n          <Link href=\"/\">Home</Link> {path === \"/\" ? \"🔥\" : \"\"}\r\n        </li>\r\n        <li>\r\n          <Link href=\"/about-us\">About Us</Link>{\" \"}\r\n          {path === \"/about-us\" ? \"🔥\" : \"\"}\r\n        </li>\r\n      </ul>\r\n    </nav>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAMe,SAAS;IACtB,MAAM,OAAO,IAAA,iJAAW;IACxB,qBACE,8OAAC;kBACC,cAAA,8OAAC;;8BACC,8OAAC;;sCACC,8OAAC,uKAAI;4BAAC,MAAK;sCAAI;;;;;;wBAAW;wBAAE,SAAS,MAAM,OAAO;;;;;;;8BAEpD,8OAAC;;sCACC,8OAAC,uKAAI;4BAAC,MAAK;sCAAY;;;;;;wBAAgB;wBACtC,SAAS,cAAc,OAAO;;;;;;;;;;;;;;;;;;AAKzC"}}]
+}

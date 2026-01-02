@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/USER/Desktop/learnNextjs/app/not-found.tsx"],"sourcesContent":["import { Metadata } from \"next\";\r\n\r\nexport const metadata: Metadata = {\r\n  title: \"Not Found\",\r\n};\r\n\r\nexport default function NotFound() {\r\n  return (\r\n    <div>\r\n      <h1>Not Found</h1>\r\n    </div>\r\n  );\r\n}\r\n"],"names":[],"mappings":";;;;;;;;AAEO,MAAM,WAAqB;IAChC,OAAO;AACT;AAEe,SAAS;IACtB,qBACE,8OAAC;kBACC,cAAA,8OAAC;sBAAG;;;;;;;;;;;AAGV"}}]
+}
