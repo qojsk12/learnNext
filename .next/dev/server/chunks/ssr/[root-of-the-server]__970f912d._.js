@@ -37,7 +37,6 @@ const metadata = {
 };
 const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 async function getMovies() {
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
     return fetch(API_URL).then((response)=>response.json());
 }
 async function HomePage() {
@@ -49,17 +48,17 @@ async function HomePage() {
                     children: movie.title
                 }, void 0, false, {
                     fileName: "[project]/app/(home)/page.tsx",
-                    lineNumber: 20,
+                    lineNumber: 19,
                     columnNumber: 11
                 }, this)
             }, movie.id, false, {
                 fileName: "[project]/app/(home)/page.tsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/app/(home)/page.tsx",
-        lineNumber: 17,
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }

@@ -1,5 +1,276 @@
-[00:00:07.763] Server  LOG      ✓ Ready in 6.4s
-[00:00:34.955] Server  LOG      ○ Compiling / ...
-[00:00:36.635] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:01.525] Server  LOG      ✓ Ready in 989ms
+[00:00:27.708] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:36.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:56.702] Server  LOG      ✓ Compiled in 4ms
+[00:08:23.530] Server  LOG      ✓ Compiled in 5ms
+[00:08:25.922] Server  LOG      ✓ Compiled in 5ms
+[00:08:31.081] Server  LOG      ✓ Compiled in 4ms
+[00:08:38.536] Server  LOG      ✓ Compiled in 5ms
+[00:08:41.299] Server  ERROR    ⨯ Error: something broke....
+[00:08:41.524] Browser ERROR   uncaughtError: Error: something broke....
+[00:09:01.318] Server  LOG      ✓ Compiled in 5ms
+[00:09:02.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:07.198] Server  LOG      ✓ Compiled in 13ms
+[00:09:08.402] Server  LOG      ✓ Compiled in 4ms
+[00:09:12.292] Browser ERROR   ./components/movie-videos.tsx:7:1
+Parsing ecmascript source code failed
+   5 |   // const response = await fetch(`${API_URL}/${id}/videos`);
+   6 |   // return response.json();
+>  7 | }
+     | ^
+   8 |
+   9 | export default async function MovieVides({ id }: { id: string }) {
+  10 |   const videos = await getVideos(id);
+
+Expression expected
+
+Import trace:
+  Server Component:
+    ./components/movie-videos.tsx
+    ./app/(movies)/movies/[id]/page.tsx
+[00:09:16.803] Server  LOG      ✓ Compiled in 3ms
+[00:09:17.001] Server  ERROR    ⨯ Error: some
+[00:09:17.255] Browser ERROR   uncaughtError: Error: some
+[00:09:19.847] Server  LOG      ✓ Compiled in 3ms
+[00:09:20.004] Server  ERROR    ⨯ Error: something broke
+[00:09:21.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:21.586] Browser ERROR   uncaughtError: Error: something broke
+[00:09:21.586] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​MovieVides' cannot have a negative time stamp.
+[00:10:47.958] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx
+Ecmascript file had an error
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:10:53.743] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:8
+Parsing ecmascript source code failed
+> 1 | exoprt default 
+    |        ^^^^^^^
+
+Expected ';', '}' or <eof>
+[00:11:02.092] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | export default function ErrorOmg()
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:04.675] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | export default function ErrorOMG()
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:07.764] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | export default function ErrorOMG() {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |     return 
+    | ^^^^^^^^^^^
+> 3 | }
+    | ^^
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:13.570] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | export default function ErrorOMG() {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |     return <h1></h1>
+    | ^^^^^^^^^^^^^^^^^^^^
+> 3 | }
+    | ^^
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:18.682] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | export default function ErrorOMG() {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 2 |   return <h1>something broke.....</h1>;
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 3 | }
+    | ^^
+  4 |
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:26.392] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:2:1
+Ecmascript file had an error
+  1 |
+> 2 | export default function ErrorOMG() {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 3 |   return <h1>something broke.....</h1>;
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 4 | }
+    | ^^
+  5 |
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:27.963] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:3:1
+Ecmascript file had an error
+  1 |
+  2 |
+> 3 | export default function ErrorOMG() {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 4 |   return <h1>something broke.....</h1>;
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 5 | }
+    | ^^
+  6 |
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:36.561] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | user
+    | ^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:39.781] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | user-clinet
+    | ^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:41.302] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet"
+    | ^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:11:46.459] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:31.982] Server  ERROR    ⨯ ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:12:32.192] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:33.537] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:33.537] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:34.322] Browser ERROR   uncaughtError: Error: ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "user-clinet";
+    | ^^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:42.161] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "use clinet";
+    | ^^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:54.176] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
+Ecmascript file had an error
+> 1 | "use clint";
+    | ^^^^^^^^^^^^
+  2 |
+  3 | export default function ErrorOMG() {
+  4 |   return <h1>something broke.....</h1>;
+
+app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
+Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+[00:12:55.657] Server  LOG      ✓ Compiled in 56ms
+[00:12:55.904] Server  ERROR    ⨯ Error: something broke
+[00:12:57.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:57.729] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​MovieVides' cannot have a negative time stamp.

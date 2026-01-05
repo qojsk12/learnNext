@@ -37,7 +37,6 @@ const metadata = {
 };
 const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies";
 async function getMovies() {
-    // await new Promise((resolve) => setTimeout(resolve, 1000));
     return fetch(API_URL).then((response)=>response.json());
 }
 async function HomePage() {
@@ -49,17 +48,17 @@ async function HomePage() {
                     children: movie.title
                 }, void 0, false, {
                     fileName: "[project]/app/(home)/page.tsx",
-                    lineNumber: 20,
+                    lineNumber: 19,
                     columnNumber: 11
                 }, this)
             }, movie.id, false, {
                 fileName: "[project]/app/(home)/page.tsx",
-                lineNumber: 19,
+                lineNumber: 18,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/app/(home)/page.tsx",
-        lineNumber: 17,
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }
@@ -98,12 +97,11 @@ __turbopack_context__.s([
     ()=>MovieVides
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$home$292f$page$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/(home)/page.tsx [app-rsc] (ecmascript)");
-;
 ;
 async function getVideos(id) {
-    const response = await fetch(`${__TURBOPACK__imported__module__$5b$project$5d2f$app$2f28$home$292f$page$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["API_URL"]}/${id}/videos`);
-    return response.json();
+    throw new Error("something broke");
+// const response = await fetch(`${API_URL}/${id}/videos`);
+// return response.json();
 }
 async function MovieVides({ id }) {
     const videos = await getVideos(id);
@@ -111,7 +109,7 @@ async function MovieVides({ id }) {
         children: JSON.stringify(videos)
     }, void 0, false, {
         fileName: "[project]/components/movie-videos.tsx",
-        lineNumber: 10,
+        lineNumber: 11,
         columnNumber: 10
     }, this);
 }

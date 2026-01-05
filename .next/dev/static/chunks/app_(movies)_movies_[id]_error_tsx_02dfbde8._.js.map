@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/app/%28movies%29/movies/%5Bid%5D/error.tsx"],"sourcesContent":["\"use client\";\n\nexport default function ErrorOMG() {\n  return <h1>something broke.....</h1>;\n}\n"],"names":[],"mappings":";;;;;AAAA;;AAEe,SAAS;IACtB,qBAAO,6LAAC;kBAAG;;;;;;AACb;KAFwB"}}]
+}
