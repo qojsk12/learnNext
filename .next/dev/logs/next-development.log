@@ -1,5 +1,5 @@
-[00:00:09.462] Server  LOG      ✓ Ready in 7.4s
-[00:00:12.644] Server  LOG      ○ Compiling / ...
-[00:00:15.266] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:07.763] Server  LOG      ✓ Ready in 6.4s
+[00:00:34.955] Server  LOG      ○ Compiling / ...
+[00:00:36.635] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:17.622] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.716] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
