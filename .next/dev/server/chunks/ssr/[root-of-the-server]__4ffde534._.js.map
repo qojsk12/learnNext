@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/app/%28home%29/page.tsx"],"sourcesContent":["import Link from \"next/link\";\nimport Movie from \"../../components/movie\";\n\nexport const metadata = {\n  title: \"Home\",\n};\n\nexport const API_URL = \"https://nomad-movies.nomadcoders.workers.dev/movies\";\n\nasync function getMovies() {\n  return fetch(API_URL).then((response) => response.json());\n}\n\nexport default async function HomePage() {\n  const movies = await getMovies();\n  return (\n    <div>\n      {movies.map((movie) => (\n        <Movie\n          key={movie.id}\n          id={movie.id}\n          poster_path={movie.poster_path}\n          title={movie.title}\n        />\n      ))}\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;AACA;;;AAEO,MAAM,WAAW;IACtB,OAAO;AACT;AAEO,MAAM,UAAU;AAEvB,eAAe;IACb,OAAO,MAAM,SAAS,IAAI,CAAC,CAAC,WAAa,SAAS,IAAI;AACxD;AAEe,eAAe;IAC5B,MAAM,SAAS,MAAM;IACrB,qBACE,8OAAC;kBACE,OAAO,GAAG,CAAC,CAAC,sBACX,8OAAC,+HAAK;gBAEJ,IAAI,MAAM,EAAE;gBACZ,aAAa,MAAM,WAAW;gBAC9B,OAAO,MAAM,KAAK;eAHb,MAAM,EAAE;;;;;;;;;;AAQvB"}}]
+}

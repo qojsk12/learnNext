@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/movie.module.css [app-client] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"movie\": \"movie-module__BWtyzG__movie\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}},
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/components/movie.tsx"],"sourcesContent":["\"use client\";\n\nimport Link from \"next/link\";\nimport styles from \"../styles/movie.module.css\";\nimport { useRouter } from \"next/navigation\";\n\ninterface IMovieProps {\n  title: string;\n  id: string;\n  poster_path: string;\n}\n\nexport default function Movie({ title, id, poster_path }: IMovieProps) {\n  const router = useRouter();\n  const onClick = () => {\n    router.push(`/movies/${id}`);\n  };\n  return (\n    <div className={styles.movie}>\n      <img src={poster_path} alt={title} onClick={onClick} />\n      <Link href={`/movies/${id}`}>{title}</Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AACA;;;AAJA;;;;AAYe,SAAS,MAAM,EAAE,KAAK,EAAE,EAAE,EAAE,WAAW,EAAe;;IACnE,MAAM,SAAS,IAAA,kJAAS;IACxB,MAAM,UAAU;QACd,OAAO,IAAI,CAAC,CAAC,QAAQ,EAAE,IAAI;IAC7B;IACA,qBACE,6LAAC;QAAI,WAAW,yIAAM,CAAC,KAAK;;0BAC1B,6LAAC;gBAAI,KAAK;gBAAa,KAAK;gBAAO,SAAS;;;;;;0BAC5C,6LAAC,0KAAI;gBAAC,MAAM,CAAC,QAAQ,EAAE,IAAI;0BAAG;;;;;;;;;;;;AAGpC;GAXwB;;QACP,kJAAS;;;KADF"}}]
+}

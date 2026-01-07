@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 21, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/movie.module.css [app-rsc] (css module)"],"sourcesContent":["__turbopack_context__.v({\n});\n"],"names":[],"mappings":"AAAA;AACA"}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["file:///workspaces/learnNext/components/movie.tsx"],"sourcesContent":["import Link from \"next/link\";\nimport styles from \"../styles/movie.module.css\";\n\ninterface IMovieProps {\n  title: string;\n  id: string;\n  poster_path: string;\n}\n\nexport default function Movie({ title, id, poster_path }: IMovieProps) {\n  return (\n    <div className={styles.movie}>\n      <img src={poster_path} alt={title} />\n      <Link href={`/movies/${id}`}>{title}</Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;AACA;;;;AAQe,SAAS,MAAM,EAAE,KAAK,EAAE,EAAE,EAAE,WAAW,EAAe;IACnE,qBACE,8OAAC;QAAI,WAAW,sIAAM,CAAC,KAAK;;0BAC1B,8OAAC;gBAAI,KAAK;gBAAa,KAAK;;;;;;0BAC5B,8OAAC,0LAAI;gBAAC,MAAM,CAAC,QAAQ,EAAE,IAAI;0BAAG;;;;;;;;;;;;AAGpC"}}]
+}
