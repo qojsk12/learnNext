@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/styles/navigation.module.css"],"sourcesContent":[".nav {\n  background-color: red;\n  padding: 50px 100px;\n}\n\n.list {\n  display: flex;\n}\n"],"names":[],"mappings":"AAAA;;;;;AAKA"}}]
+}

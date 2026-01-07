@@ -1,276 +1,293 @@
-[00:00:01.525] Server  LOG      ✓ Ready in 989ms
-[00:00:27.708] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:01.237] Server  LOG      ✓ Ready in 799ms
+[00:00:09.527] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:27.792] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:56.702] Server  LOG      ✓ Compiled in 4ms
-[00:08:23.530] Server  LOG      ✓ Compiled in 5ms
-[00:08:25.922] Server  LOG      ✓ Compiled in 5ms
-[00:08:31.081] Server  LOG      ✓ Compiled in 4ms
-[00:08:38.536] Server  LOG      ✓ Compiled in 5ms
-[00:08:41.299] Server  ERROR    ⨯ Error: something broke....
-[00:08:41.524] Browser ERROR   uncaughtError: Error: something broke....
-[00:09:01.318] Server  LOG      ✓ Compiled in 5ms
-[00:09:02.543] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:07.198] Server  LOG      ✓ Compiled in 13ms
-[00:09:08.402] Server  LOG      ✓ Compiled in 4ms
-[00:09:12.292] Browser ERROR   ./components/movie-videos.tsx:7:1
+[00:00:09.610] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:04:04.672] Server  LOG      ✓ Compiled in 6ms
+[00:04:30.127] Server  LOG      ✓ Compiled in 2ms
+[00:07:35.333] Server  LOG      ✓ Compiled in 10ms
+[00:07:35.516] Browser ERROR   ./components/navigation.tsx:3:1
 Parsing ecmascript source code failed
-   5 |   // const response = await fetch(`${API_URL}/${id}/videos`);
-   6 |   // return response.json();
->  7 | }
-     | ^
-   8 |
-   9 | export default async function MovieVides({ id }: { id: string }) {
-  10 |   const videos = await getVideos(id);
+  1 | "use client";
+  2 | import sylte
+> 3 | import Link from "next/link";
+    | ^^^^^^
+  4 | import { usePathname } from "next/navigation";
+  5 | import { useState } from "react";
+  6 |
+
+Expected ',', got 'import'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:07:38.329] Browser ERROR   ./components/navigation.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 | import styles
+> 3 | import Link from "next/link";
+    | ^^^^^^
+  4 | import { usePathname } from "next/navigation";
+  5 | import { useState } from "react";
+  6 |
+
+Expected ',', got 'import'
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:07:39.893] Server  LOG      ✓ Compiled in 4ms
+[00:07:40.087] Browser ERROR   ./components/navigation.tsx:3:1
+Parsing ecmascript source code failed
+  1 | "use client";
+  2 | import styles from 
+> 3 | import Link from "next/link";
+    | ^^^^^^
+  4 | import { usePathname } from "next/navigation";
+  5 | import { useState } from "react";
+  6 |
+
+Unexpected token `import`. Expected a string literal
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:07:42.756] Server  LOG      ✓ Compiled in 7ms
+[00:08:12.739] Server  LOG      ✓ Compiled in 6ms
+[00:08:12.902] Browser ERROR   Invalid DOM property `%s`. Did you mean `%s`? class className
+[00:08:15.353] Server  LOG      ✓ Compiled in 9ms
+[00:08:15.534] Browser ERROR   ./components/navigation.tsx:10:21
+Parsing ecmascript source code failed
+   8 |   const path = usePathname();
+   9 |   return (
+> 10 |     <nav className={">
+     |                     ^^
+  11 |       <ul>
+  12 |         <li>
+  13 |           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+
+Unterminated string constant
+
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:08:16.978] Server  LOG      ✓ Compiled in 6ms
+[00:08:17.162] Browser ERROR   ./components/navigation.tsx:10:22
+Parsing ecmascript source code failed
+   8 |   const path = usePathname();
+   9 |   return (
+> 10 |     <nav className={}>
+     |                      ^
+  11 |       <ul>
+  12 |         <li>
+  13 |           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
 
 Expression expected
 
 Import trace:
   Server Component:
-    ./components/movie-videos.tsx
-    ./app/(movies)/movies/[id]/page.tsx
-[00:09:16.803] Server  LOG      ✓ Compiled in 3ms
-[00:09:17.001] Server  ERROR    ⨯ Error: some
-[00:09:17.255] Browser ERROR   uncaughtError: Error: some
-[00:09:19.847] Server  LOG      ✓ Compiled in 3ms
-[00:09:20.004] Server  ERROR    ⨯ Error: something broke
-[00:09:21.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:09:21.586] Browser ERROR   uncaughtError: Error: something broke
-[00:09:21.586] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​MovieVides' cannot have a negative time stamp.
-[00:10:47.958] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx
-Ecmascript file had an error
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:10:53.743] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:8
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:08:17.162] Browser ERROR   ./components/navigation.tsx:20:6
 Parsing ecmascript source code failed
-> 1 | exoprt default 
-    |        ^^^^^^^
+  18 |         </li>
+  19 |       </ul>
+> 20 |     </nav>
+     |      ^^^^^
+  21 |   );
+  22 | }
+  23 |
 
-Expected ';', '}' or <eof>
-[00:11:02.092] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | export default function ErrorOmg()
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Unterminated regexp literal
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:04.675] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | export default function ErrorOMG()
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:08:19.332] Server  LOG      ✓ Compiled in 7ms
+[00:08:19.547] Browser ERROR   uncaughtError: ReferenceError: style is not defined
+[00:08:24.336] Server  LOG      ✓ Compiled in 6ms
+[00:08:24.528] Browser ERROR   ./components/navigation.tsx:10:28
+Parsing ecmascript source code failed
+   8 |   const path = usePathname();
+   9 |   return (
+> 10 |     <nav className={styles.}>
+     |                            ^
+  11 |       <ul>
+  12 |         <li>
+  13 |           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:07.764] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | export default function ErrorOMG() {
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 2 |     return 
-    | ^^^^^^^^^^^
-> 3 | }
-    | ^^
+Expected ident
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:13.570] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | export default function ErrorOMG() {
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 2 |     return <h1></h1>
-    | ^^^^^^^^^^^^^^^^^^^^
-> 3 | }
-    | ^^
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:18.682] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | export default function ErrorOMG() {
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 2 |   return <h1>something broke.....</h1>;
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 3 | }
-    | ^^
-  4 |
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:26.392] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:2:1
-Ecmascript file had an error
-  1 |
-> 2 | export default function ErrorOMG() {
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 3 |   return <h1>something broke.....</h1>;
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:08:28.935] Server  LOG      ✓ Compiled in 6ms
+[00:08:28.985] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:29.165] Server  ERROR    ⨯ ReferenceError: style is not defined
+[00:08:29.177] Browser ERROR   uncaughtError: ReferenceError: style is not defined
+[00:08:29.973] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:29.973] Browser ERROR   uncaughtError: ReferenceError: style is not defined
+[00:08:49.485] Server  LOG      ✓ Compiled in 29ms
+[00:08:49.534] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:49.569] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:08:50.556] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:37.645] Server  LOG      ✓ Compiled in 7ms
+[00:09:37.825] Browser ERROR   ./styles/navigation.module.css:4:1
+Parsing CSS source code failed
+  2 |   background-color: red;
+  3 |   pad
 > 4 | }
-    | ^^
+    | ^
   5 |
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:27.963] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:3:1
-Ecmascript file had an error
-  1 |
-  2 |
-> 3 | export default function ErrorOMG() {
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 4 |   return <h1>something broke.....</h1>;
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-> 5 | }
-    | ^^
-  6 |
+Unexpected end of input
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:36.561] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | user
-    | ^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+Import traces:
+  Client Component Browser:
+    ./styles/navigation.module.css [Client Component Browser]
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:39.781] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | user-clinet
-    | ^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+  Client Component SSR:
+    ./styles/navigation.module.css [Client Component SSR]
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+[00:09:39.592] Server  LOG      ✓ Compiled in 9ms
+[00:09:42.985] Server  LOG      ✓ Compiled in 2ms
+[00:09:51.584] Server  LOG      ✓ Compiled in 3ms
+[00:10:00.145] Server  LOG      ✓ Compiled in 3ms
+[00:10:01.783] Server  LOG      ✓ Compiled in 2ms
+[00:10:08.906] Server  LOG      ✓ Compiled in 6ms
+[00:10:09.086] Browser ERROR   ./styles/navigation.module.css:7:1
+Parsing CSS source code failed
+  5 |
+  6 | .nav 
+> 7 |
+    | ^
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:41.302] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet"
-    | ^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+Unexpected end of input
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:11:46.459] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+Import traces:
+  Client Component Browser:
+    ./styles/navigation.module.css [Client Component Browser]
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:31.982] Server  ERROR    ⨯ ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+  Client Component SSR:
+    ./styles/navigation.module.css [Client Component SSR]
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+[00:10:10.180] Browser ERROR   ./styles/navigation.module.css:10:1
+Parsing CSS source code failed
+   8 |
+   9 | .nav;
+> 10 |
+     | ^
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+Unexpected end of input
 
+Import traces:
+  Client Component Browser:
+    ./styles/navigation.module.css [Client Component Browser]
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
 
+  Client Component SSR:
+    ./styles/navigation.module.css [Client Component SSR]
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+[00:10:13.244] Server  LOG      ✓ Compiled in 11ms
+[00:11:07.775] Server  LOG      ✓ Compiled in 3ms
+[00:11:07.953] Browser ERROR   ./styles/navigation.module.css
+Transforming CSS failed
+Selector "list" is not pure. Pure selectors must contain at least one local class or id.
 
+Import traces:
+  Client Component Browser:
+    ./styles/navigation.module.css [Client Component Browser]
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
 
-[00:12:32.192] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+  Client Component SSR:
+    ./styles/navigation.module.css [Client Component SSR]
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+[00:11:10.198] Server  LOG      ✓ Compiled in 4ms
+[00:11:10.379] Browser ERROR   ./styles/navigation.module.css:6:1
+Parsing CSS source code failed
+  4 | }
+  5 |
+> 6 | .0list {
+    | ^
+  7 |   display: flex;
+  8 | }
+  9 |
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:33.537] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+Invalid empty selector
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:33.537] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+Import traces:
+  Client Component Browser:
+    ./styles/navigation.module.css [Client Component Browser]
+    ./components/navigation.tsx [Client Component Browser]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:34.322] Browser ERROR   uncaughtError: Error: ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
+  Client Component SSR:
+    ./styles/navigation.module.css [Client Component SSR]
+    ./components/navigation.tsx [Client Component SSR]
+    ./components/navigation.tsx [Server Component]
+    ./app/layout.tsx [Server Component]
+[00:11:10.794] Server  LOG      ✓ Compiled in 5ms
+[00:11:16.314] Server  LOG      ✓ Compiled in 6ms
+[00:11:16.468] Browser ERROR   Received `%s` for a non-boolean attribute `%s`.
 
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+If you want to write it to the DOM, pass a string instead: %s="%s" or %s={value.toString()}. true calss calss true calss
+[00:11:17.490] Server  LOG      ✓ Compiled in 3ms
+[00:11:21.016] Server  LOG      ✓ Compiled in 5ms
+[00:11:21.196] Browser ERROR   ./components/navigation.tsx:11:23
+Parsing ecmascript source code failed
+   9 |   return (
+  10 |     <nav className={styles.nav}>
+> 11 |       <ul className={}>
+     |                       ^
+  12 |         <li>
+  13 |           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+  14 |         </li>
 
+Expression expected
 
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:11:24.021] Server  LOG      ✓ Compiled in 5ms
+[00:11:24.214] Browser ERROR   ./components/navigation.tsx:11:29
+Parsing ecmascript source code failed
+   9 |   return (
+  10 |     <nav className={styles.nav}>
+> 11 |       <ul className={styles.}>
+     |                             ^
+  12 |         <li>
+  13 |           <Link href="/">Home</Link> {path === "/" ? "🔥" : ""}
+  14 |         </li>
 
+Expected '</', got '}'
 
-[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:34.560] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "user-clinet";
-    | ^^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:42.161] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "use clinet";
-    | ^^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:54.176] Browser ERROR   ./app/(movies)/movies/[id]/error.tsx:1:1
-Ecmascript file had an error
-> 1 | "use clint";
-    | ^^^^^^^^^^^^
-  2 |
-  3 | export default function ErrorOMG() {
-  4 |   return <h1>something broke.....</h1>;
-
-app/(movies)/movies/[id]/error.tsx must be a Client Component. Add the "use client" directive the top of the file to resolve this issue.
-Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
-[00:12:55.657] Server  LOG      ✓ Compiled in 56ms
-[00:12:55.904] Server  ERROR    ⨯ Error: something broke
-[00:12:57.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:57.729] Browser ERROR   uncaughtError: TypeError: Failed to execute 'measure' on 'Performance': '​MovieVides' cannot have a negative time stamp.
+Import trace:
+  Server Component:
+    ./components/navigation.tsx
+    ./app/layout.tsx
+[00:11:26.202] Server  LOG      ✓ Compiled in 7ms
